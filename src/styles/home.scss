@@ -1,0 +1,104 @@
+.left-header {
+  border-right: 2px solid #25a2e0;
+  width: 100px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  ul {
+    height: 70%;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    li {
+      font-size: 24px;
+      color: #474747;
+      &:hover {
+        color: #25a2e0;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+.tweets {
+  padding: 50px 50px 0 50px;
+  border-bottom: 1px solid #25a2e0;
+  .top-tweet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    .left-tweet {
+      img {
+        width: 200px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 1px solid #25a2e0;
+      }
+    }
+    .right-tweet {
+      p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  footer { 
+    display: flex;
+    justify-content: space-between;
+    div {
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        font-size: 24px;
+        &:first-child {
+              &:hover {
+                color: #f00;
+                transition: .3s;
+            }
+        }
+        &:nth-child(2) {
+            color: #f00;
+            border-left: 1px solid #25a2e0;
+            border-right: 1px solid #25a2e0;
+             &:hover {
+                color: #25a2e0;
+                transition: .3s;
+            }
+        }
+        &:last-child {
+            color: #25a2e0;
+            &:hover {
+                color: #474747;
+                transition: .3s;
+            }
+        }
+    }
+  }
+}
+
+.all {
+  margin-left: 100px;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .left-header {
+    width: 50px;
+    li {
+      font-size: 16px;
+    }
+  }
+  .all {
+    margin-left: 50px;
+    transition: 0.5s;
+  }
+}
