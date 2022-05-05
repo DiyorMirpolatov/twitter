@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 const Home = () => {
 
     const handleReTweet = () => {
-      alert("We can not retweet your message");
+      alert("We are sorry! We can't retweet your message😔");
     }; 
     
     const handleLike = () => {
-      alert("You liked this tweet");
+      alert("You liked this tweet❤");
       console.log(123);
     };
      
     const handleShare = () => {
-       alert("Accept all the cookies to share this tweet");
+       alert("Accept all the cookies to share this tweet🙂");
      };
   return (
     <>
@@ -87,15 +87,15 @@ const Home = () => {
             </div>
           </div>
           <footer>
-            <div className="last">
+            <span onClick={handleReTweet} className="last">
               Retweet <i className="fa-solid fa-retweet"></i>
-            </div>
-            <div className="last">
+            </span>
+            <span onClick={handleLike} className="last">
               Like <i className="fa-solid fa-thumbs-up"></i>
-            </div>
-            <div className="last">
+            </span>
+            <span onClick={handleShare} className="last">
               Share <i className="fa-solid fa-share"></i>
-            </div>
+            </span>
           </footer>
         </div>
         <div className="tweets">

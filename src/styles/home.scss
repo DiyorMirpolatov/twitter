@@ -26,7 +26,7 @@
 }
 
 .tweets {
-  padding: 50px 50px 0 50px;
+  padding: 10px 10px 0 10px;
   border-bottom: 1px solid #25a2e0;
   .top-tweet {
     display: flex;
@@ -50,37 +50,37 @@
     }
   }
 
-  footer { 
+  footer {
     display: flex;
     justify-content: space-between;
-    div {
-        cursor: pointer;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0 10px 0;
-        font-size: 24px;
-        &:first-child {
-              &:hover {
-                color: #f00;
-                transition: .3s;
-            }
+    span {
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0 10px 0;
+      font-size: 24px;
+      &:first-child {
+        &:hover {
+          color: #f00;
+          transition: 0.3s;
         }
-        &:nth-child(2) {
-            color: #f00;
-            border-left: 1px solid #25a2e0;
-            border-right: 1px solid #25a2e0;
-             &:hover {
-                color: #25a2e0;
-                transition: .3s;
-            }
+      }
+      &:nth-child(2) {
+        color: #f00;
+        border-left: 1px solid #25a2e0;
+        border-right: 1px solid #25a2e0;
+        &:hover {
+          color: #25a2e0;
+          transition: 0.3s;
         }
-        &:last-child {
-            color: #25a2e0;
-            &:hover {
-                color: #474747;
-                transition: .3s;
-            }
+      }
+      &:last-child {
+        color: #25a2e0;
+        &:hover {
+          color: #474747;
+          transition: 0.3s;
         }
+      }
     }
   }
 }
@@ -100,5 +100,62 @@
   .all {
     margin-left: 50px;
     transition: 0.5s;
+  }
+}
+
+@media (max-width: 1000px) {
+  .tweets {
+    .top-tweet {
+      .left-tweet {
+        img {
+          width: 100px;
+          aspect-ratio: 1;
+        }
+      }
+      .right-tweet {
+        h2 {
+          font-size: 16px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    footer {
+      span {
+        font-size: 18px;
+        padding: 5px 0 5px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .tweets {
+    .top-tweet {
+      .left-tweet {
+        img {
+          width: 65px;
+          aspect-ratio: 1;
+        }
+      }
+      .right-tweet {
+        h2 {
+          font-size: 14px;
+        }
+        small {
+          font-size: 8px;
+        }
+        p {
+          font-size: 10px;
+        }
+      }
+    }
+     footer {
+      span {
+        font-size: 14px;
+        padding: 5px 0 5px 0;
+      }
+    }
   }
 }
