@@ -17,7 +17,7 @@ const Home = () => {
      };
   return (
     <>
-      <div className="left-header">
+      <div className="left-header align-self-center">
         <ul>
             <Link to="/">
           <li>

@@ -12,6 +12,9 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+}
 
 * {
   margin: 0;
@@ -25,4 +28,10 @@ code {
 
 ul {
   list-style: none;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 98%;
+  }
 }
