@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/profile.scss";
 
 const Profile = () => {
@@ -128,7 +129,53 @@ const Profile = () => {
               </ul>
             </div>
           </div>
-          <div className="right"></div>
+          <div className="right">
+            <div className="tweets">
+              <Link to={"/posts/1"}>
+                <div className="top-tweet">
+                  <div className="left-tweet">
+                    <img
+                      src="https://thumbs.dreamstime.com/b/user-icon-trendy-flat-style-isolated-grey-background-user-symbol-user-icon-trendy-flat-style-isolated-grey-background-123663211.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="right-tweet">
+                    <h2>Mirpolatov Diyor</h2>
+                    <small>@MirpolatovDiyor</small>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Voluptate eaque nobis eius laborum. Ex, aliquam a
+                      perferendis nulla incidunt iusto maxime possimus tenetur
+                      tempora, magnam repellendus est praesentium cumque animi
+                      magni expedita deleniti hic quasi. Porro quod dignissimos
+                      vero accusamus nam amet error enim aut provident sequi
+                      consectetur fugiat, placeat nulla tempore quo perferendis
+                      voluptates praesentium distinctio harum dolore? Officia
+                      reiciendis facere, perferendis vitae tempora omnis
+                      consequuntur dignissimos accusamus id laboriosam optio
+                      blanditiis delectus quia incidunt ducimus sed adipisci
+                      maiores labore ut consectetur. Adipisci quo, aliquid,
+                      cupiditate illo impedit dolor velit modi assumenda
+                      inventore praesentium veritatis, est consectetur sunt
+                      maiores?
+                    </p>
+                    <small>Todays time</small>
+                  </div>
+                </div>
+                <footer>
+                  <span className="last">
+                    Retweet <i className="fa-solid fa-retweet"></i>
+                  </span>
+                  <span className="last">
+                    Like <i className="fa-solid fa-thumbs-up"></i>
+                  </span>
+                  <span className="last">
+                    Share <i className="fa-solid fa-share"></i>
+                  </span>
+                </footer>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </>

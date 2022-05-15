@@ -27,7 +27,9 @@
 
 .tweets {
   padding: 10px 10px 0 10px;
-  border-bottom: 1px solid #25a2e0;
+  a {
+    color: #000;
+  }
   .top-tweet {
     display: flex;
     justify-content: center;
@@ -53,6 +55,7 @@
   footer {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #25a2e0;
     span {
       cursor: pointer;
       width: 100%;

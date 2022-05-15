@@ -1,0 +1,31 @@
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a8a8ce;
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
+    background-color: #5e5ef0;
+    color: #fff;
+    border-radius: 20px;
+    &:hover {
+      box-shadow: 0 0 10px 5px #8c9ae8;
+      color: #5e5ef0;
+      background-color: #fff;
+      transition: 0.5s;
+    }
+    label {
+      color: #a8a8ce;
+    }
+    a {
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+}
