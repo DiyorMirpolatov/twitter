@@ -4,6 +4,9 @@ import Login from "./pages/Login";
 import Posts from "./pages/Posts";
 import Profile from "./pages/Profile";
 import Register from "./pages/Register";
+import axios from "axios";
+
+axios.defaults.baseURL = "https://twitter-albison.herokuapp.com";
 
 function App() {
   return (

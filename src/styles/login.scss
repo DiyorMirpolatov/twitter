@@ -14,18 +14,105 @@
     background-color: #5e5ef0;
     color: #fff;
     border-radius: 20px;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
     &:hover {
       box-shadow: 0 0 10px 5px #8c9ae8;
       color: #5e5ef0;
       background-color: #fff;
       transition: 0.5s;
+      label {
+        color: #5e5ef0;
+        transition: 0.5s;
+      }
+      button {
+        background-color: #5e5ef0;
+        color: #fff;
+        transition: 0.5s;
+      }
+      a {
+        transition: 0.5s;
+        color: #5e5ef0;
+      }
     }
     label {
       color: #a8a8ce;
     }
+
     a {
       text-decoration: underline;
       color: #fff;
+    }
+    small {
+      text-align: center;
+    }
+    button {
+      color: #5e5ef0;
+      background-color: #fff;
+    }
+  }
+}
+
+.register {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a8a8ce;
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
+    background-color: #5e5ef0;
+    color: #fff;
+    border-radius: 20px;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &:hover {
+      box-shadow: 0 0 10px 5px #8c9ae8;
+      color: #5e5ef0;
+      background-color: #fff;
+      transition: 0.5s;
+      label {
+        color: #5e5ef0;
+        transition: 0.5s;
+      }
+      button {
+        background-color: #5e5ef0;
+        color: #fff;
+        transition: 0.5s;
+      }
+      a {
+        transition: 0.5s;
+        color: #5e5ef0;
+      }
+    }
+    label {
+      color: #a8a8ce;
+    }
+    button {
+      color: #5e5ef0;
+      background-color: #fff;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #fff;
+    }
+    small {
+      text-align: center;
+    }
+    button {
+      width: 100%;
     }
   }
 }
